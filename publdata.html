@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>C3 Demo</title>
+        <!-- Load c3.css -->
+        <link href="c3/c3.css" rel="stylesheet" type="text/css">
+        <!-- Load d3.js and c3.js -->
+        <script type="text/javascript" src="d3/d3.min.js"></script>
+        <script type="text/javascript" src="c3/c3.min.js"></script>
+    </head>
+    <body>
+        <div id="chart"></div>
+ <script type="text/javascript">          
+var chart = c3.generate({
+    data: {
+        x : 'x',
+        columns: [
+            ['x', 'Bundeskanzlei (BK)', 'Bundesversammlung', 'EDA', 'EDI', 'EFD', 'EJPD', 'Strafverfolgungsbehörden', 'UVEK', 'VBS', 'WBF'],
+            ['Anzahl Datensätze im Dateninventar', 13, 5, 2, 776, 54, 14, 1, 334, 70, 165],
+            ['auf opendata.swiss', 0, 0, 0, 306, 1, 0, 0, 152, 1, 88]
+        ],
+        type: 'bar'
+    },
+    axis: {
+        x: {
+            type: 'category',
+            tick: {
+                rotate: 75,
+                multiline: false
+            },
+            height: 130
+        }
+    }
+});
+        </script>
+    </body>
+</html>
