@@ -1,0 +1,473 @@
+{
+	"tree" : {
+		"nodeName" : "Categories OGD",
+		"name" : "Categories OGD",
+		"type" : "type4",
+        "dataset" :"Erste Ebene: G8\nZweite Ebene: ODB\nDritte Ebene: GODI",
+		"Organisation" : "-",
+            "children" : [{
+            "nodeName" : "Health",
+            "name" : "Health",
+            "type" : "type1",
+            "dataset" :"Prescription data, performance data",
+            "Organisation" : "Bundesamt für Gesundheit (BAG)",
+				"children" : [{
+						"nodeName" : "Health sector performance data",
+						"name" : "Health sector performance data",
+						"type" : "type2",
+						"dataset" : "administrative data\nperformance of health services",
+						"Organisation" : "Bundesamt für Gesundheit (BAG)",
+						"children" : []
+					}
+				]
+			}, 
+                          
+                          {
+            "nodeName" : "Crime and justice",
+            "name" : "Crime and justice",
+            "type" : "type1",
+            "dataset" :"Crime statistics, safety",
+            "Organisation" : "Bundesamt für Statistik (BFS)",
+				"children" : [{
+						"nodeName" : "Crime statistics data",
+						"name" : "Crime statistics data",
+						"type" : "type2",
+						"dataset" : "Annual returns on levels of crime, real-time crime-by-crime reports ",
+						"Organisation" : "Bundesamt für Statistik (BFS)",
+						"children" : []
+					}
+				]
+			}, 
+                          
+                          {
+            "nodeName" : "Statistics",
+            "name" : "Statistics",
+            "type" : "type1",
+            "dataset" :"National Statistics, Census, infrastructure, wealth, skills",
+            "Organisation" : "Bundesamt für Statistik (BFS)",
+				"children" : [{
+						"nodeName" : "National statistics",
+						"name" : "National statistics",
+						"type" : "type2",
+						"dataset" : "Key national statistics\nGDP, unemployment, population, etc",
+						"Organisation" : "Bundesamt für Statistik (BFS)",
+						"children" : [
+                                {
+                            "nodeName" : "National statistics",
+                            "name" : "National statistics",
+                            "type" : "type3",
+                            "dataset" : "Key national statistics\n(GDP), or unemployment and population statistics",
+                            "Organisation" : "BFS",
+                            "children" : []
+                        }
+                        ]
+					}
+				]
+			}, 
+            {
+				"nodeName" : "Government Accountability and Democracy",
+						"name" : "Govern. Accountability & Democracy",
+						"type" : "type1",
+						"dataset" : "Government contact points\nelection results\nlegislation and statutes, salaries (pay scales)",
+						"Organisation" : "BAR, BFS und BK",
+						"children"  : 
+                    [{
+                            "nodeName" : "Legislation data",
+                            "name" : "Legislation data",
+                            "type" : "type2",
+                            "dataset" : "the constitution and laws of a country, including national laws and statutes",
+                            "Organisation" : "Schweizerisches Bundesarchiv (BAR)",
+                            "children"  : 
+                            [{
+                                        "nodeName" : "National Laws",
+                                "name" : "National Laws",
+                                "type" : "type3",
+                                "dataset" : "national laws and statutes, information on legislative behaviour e.g. voting records",
+                                "Organisation" : "BAR",
+                                "children"  : []
+                                    },
+
+                                {
+                                        "nodeName" : "Draft Legislation",
+                                "name" : "Draft Legislation",
+                                "type" : "type3",
+                                "dataset" : "Data about the bills discussed within national parliament as well as votings",
+                                "Organisation" : "BAR",
+                                "children"  : []
+                                    }
+                                ]
+                        }, {
+						"nodeName" : "National election results data",
+						"name" : "National election results data",
+						"type" : "type2",
+						"dataset" : "Results by constituency/district for the  national electoral contests",
+						"Organisation" : "BFS und Bundeskanzlei (BK)",
+						"children" : [{
+                                    "nodeName" : "Election Results",
+                            "name" : "Election Results",
+                            "type" : "type3",
+                            "dataset" : "results by constituency / district for all major national electoral contests",
+                            "Organisation" : "BFS und BK",
+                            "children": []
+							}
+						]
+					}
+				]
+			},
+            {
+				"nodeName" : "Geospatial",
+						"name" : "Geospatial",
+						"type" : "type1",
+						"dataset" : "Topography, postcodes, national maps, local maps",
+						"Organisation" : "swisstopo und BFS",
+						"children"  : 
+                    [{
+                            "nodeName" : "Mapping data",
+                            "name" : "Mapping data",
+                            "type" : "type2",
+                            "dataset" : "a digital map of the country with key features",
+                            "Organisation" : "swisstopo",
+                            "children"  : 
+                            [{
+                                        "nodeName" : "Administrative Boundaries",
+                                "name" : "Administrative Boundaries",
+                                "type" : "type3",
+                                "dataset" : "Data on administrative units or areas ",
+                                "Organisation" : "swisstopo",
+                                "children"  : []
+                                    },
+                             {
+                                        "nodeName" : "National Maps",
+                                "name" : "National Maps",
+                                "type" : "type3",
+                                "dataset" : "a geographical map of the country including national traffic routes, stretches of water etc.",
+                                "Organisation" : "swisstopo",
+                                "children"  : []
+                                    }
+                                ]
+                        },
+                     {
+                           "nodeName" : "",
+                            "name" : "",
+                            "type" : "",
+                            "dataset" : "",
+                            "Organisation" : "",
+                            "children"  :  
+                            [{
+                                        "nodeName" : "Locations",
+                                "name" : "Locations",
+                                "type" : "type3",
+                                "dataset" : "a database of postcodes/zipcodes and the corresponding spatial locations",
+                                "Organisation" : "BFS",
+                                "children"  : []
+                                    }
+                                ]
+                        }
+                     
+                     
+				]
+			},
+        
+        {
+				"nodeName" : "Finance and contracts",
+						"name" : "Finance and contracts",
+						"type" : "type1",
+						"dataset" : "Transaction spend, contracts let, call for tender, future tenders, local budget, nat. budget",
+						"Organisation" : "SIMAP und BFS",
+						"children"  : 
+                    [{
+                            "nodeName" : "Public contracting data",
+                            "name" : "Public contracting data",
+                            "type" : "type2",
+                            "dataset" : "details of the contracts issued by the national government",
+                            "Organisation" : "SIMAP",
+                            "children"  : 
+                            [{
+                                        "nodeName" : "Procurement",
+                                "name" : "Procurement",
+                                "type" : "type3",
+                                "dataset" : "all tenders and awards of the national/federal government aggregated by office",
+                                "Organisation" : "SIMAP",
+                                "children"  : []
+                                    }
+                                ]
+                        },
+                     {
+                            "nodeName" : "Government spend data",
+                            "name" : "Government spend data",
+                            "type" : "type2",
+                            "dataset" : "records of actual (past) national government spending at a detailed transactional level",
+                            "Organisation" : "BFS und EFV",
+                            "children"  : 
+                            [{
+                                        "nodeName" : "Government Spending",
+                                "name" : "Government Spending",
+                                "type" : "type3",
+                                "dataset" : "records of actual (past) national government spending at a detailed transactional level",
+                                "Organisation" : "BFS und EFV",
+                                "children"  : []
+                                    }
+                                ]
+                        },
+                      {
+                            "nodeName" : "Detailed budget data",
+                            "name" : "Detailed budget data",
+                            "type" : "type2",
+                            "dataset" : "nat. government budget at a high level (e.g. spending by sector, department etc)",
+                            "Organisation" : "BFS und EFV",
+                            "children"  : 
+                            [{
+                                        "nodeName" : "Government Budget",
+                                "name" : "Government Budget",
+                                "type" : "type3",
+                                "dataset" : "nat. government budget at a high level, that is the planned government expenditure",
+                                "Organisation" : "BFS und EFV",
+                                "children"  : []
+                                    }
+                                ]
+                        }
+                     
+                     
+				]
+			},
+        {
+				"nodeName" : "Earth observation",
+						"name" : "Earth observation",
+						"type" : "type1",
+						"dataset" : "Meteorological/weather, agriculture, forestry, fishing, and hunting",
+						"Organisation" : "MeteoSchweiz",
+						"children"  : 
+                    [{
+                            "nodeName" : "",
+                            "name" : "",
+                            "type" : "",
+                            "dataset" : "",
+                            "Organisation" : "",
+                            "children"  : 
+                            [{
+                                        "nodeName" : "Weather Forecast",
+                                "name" : "Weather Forecast",
+                                "type" : "type3",
+                                "dataset" : "3-day forecasts of temperature, precipitation and wind",
+                                "Organisation" : "MeteoSchweiz",
+                                "children"  : []
+                                    }
+                                ]
+                        }
+                     
+                     
+				]
+			},
+        {
+				"nodeName" : "Energy and Environment",
+						"name" : "Energy and Environment",
+						"type" : "type1",
+						"dataset" : "Pollution levels, energy consumption",
+						"Organisation" : "BAFU",
+						"children"  : 
+                    [{
+                            "nodeName" : "National environmental statistics data",
+                            "name" : "National environmental statistics data",
+                            "type" : "type2",
+                            "dataset" : "carbon/pollutants emissions and deforestation",
+                            "Organisation" : "BAFU",
+                            "children"  : 
+                            [{
+                                        "nodeName" : "Air Quality",
+                                "name" : "Air Quality",
+                                "type" : "type3",
+                                "dataset" : "daily mean concentration of air pollutants",
+                                "Organisation" : "BAFU",
+                                "children"  : []
+                                    }
+                                ]
+                        },
+                     {
+                            "nodeName" : "",
+                            "name" : "",
+                            "type" : "",
+                            "dataset" : "",
+                            "Organisation" : "",
+                            "children"  : 
+                            [{
+                                        "nodeName" : "Water Quality",
+                                "name" : "Water Quality",
+                                "type" : "type3",
+                                "dataset" : "quality of designated drinking water sources and environmental water source",
+                                "Organisation" : "BAFU",
+                                "children"  : []
+                                    }
+                                ]
+                        }
+                     
+                     
+                     
+				]
+			},
+        {
+				"nodeName" : "Companies",
+						"name" : "Companies",
+						"type" : "type1",
+						"dataset" : "Company/business register",
+						"Organisation" : "BFS und BJ",
+						"children"  : 
+                    [{
+                            "nodeName" : "Company registration data",
+                            "name" : "Company registration data",
+                            "type" : "type2",
+                            "dataset" : "list of registered companies including name, unique identifier and address",
+                            "Organisation" : "BFS und BJ",
+                            "children"  : 
+                            [{
+                                        "nodeName" : "Company Register",
+                                "name" : "Company Register",
+                                "type" : "type3",
+                                "dataset" : "aist of registered companies",
+                                "Organisation" : "BFS und BJ",
+                                "children"  : []
+                                    }
+                                ]
+                        }
+                     
+                     
+                     
+				]
+			},
+            {
+				"nodeName" : "Education",
+						"name" : "Education",
+						"type" : "type1",
+						"dataset" : "List of schools; performance of schools, digital skills",
+						"Organisation" : "BFS",
+						"children"  : 
+                    [{
+                            "nodeName" : "Primary and secondary education performance data",
+                            "name" : "Primary and secondary education performance data",
+                            "type" : "type2",
+                            "dataset" : "performance of education services",
+                            "Organisation" : "BFS",
+                            "children"  : 
+                            [                               ]
+                        }
+                     
+                     
+                     
+				]
+			},
+           {
+				"nodeName" : "Transport and Infrastructure",
+						"name" : "Transport and Infrastructure",
+						"type" : "type1",
+						"dataset" : "Public transport timetables, access points broadband penetration",
+						"Organisation" : "BAV, Comcom & Bakom",
+						"children"  : 
+                    [{
+                            "nodeName" : "Public transport timetable data",
+                            "name" : "Public transport timetable data",
+                            "type" : "type2",
+                            "dataset" : "details of when and where public transport services such as buses and rail services run",
+                            "Organisation" : "BAV",
+                            "children"  : 
+                            [                               ]
+                        }
+                     
+                     
+                     
+				]
+			} ,
+                          
+          {
+				"nodeName" : "Global Development",
+						"name" : "Global Development",
+						"type" : "type1",
+						"dataset" : "Aid, food security, extractives, land",
+						"Organisation" : "DEZA und EDA",
+						"children"  : 
+                    [
+                     
+                     
+                     
+				]
+			} ,
+            {
+				"nodeName" : "Science and Research",
+						"name" : "Science and Research",
+						"type" : "type1",
+						"dataset" : "Genome data, research and educational activity, experiment results",
+						"Organisation" : "SBFI",
+						"children"  : 
+                    [
+                     
+                     
+                     
+				]
+			} ,
+            {
+				"nodeName" : "Social mobility and welfare",
+						"name" : "Social mobility and welfare",
+						"type" : "type1",
+						"dataset" : "Housing, health insurance and unemployment benefits",
+						"Organisation" : "BFS und BSV",
+						"children"  : 
+                    [
+                     
+                     
+                     
+				]
+			} ,
+        {
+				"nodeName" : "",
+						"name" : "",
+						"type" : "",
+						"dataset" : "",
+						"Organisation" : "",
+						"Daten" : "",
+						"children"  : 
+                    [{
+                            "nodeName" : "Land ownership data",
+                            "name" : "Land ownership data",
+                            "type" : "type2",
+                            "dataset" : "national level information on land ownership",
+                            "Organisation" : "swisstopo",
+                            "children"  : 
+                            [{
+                                        "nodeName" : "Land Ownership",
+                                "name" : "Land Ownership",
+                                "type" : "type3",
+                                "dataset" : "maps of lands with parcel layer that displays boundaries",
+                                "Organisation" : "swisstopo",
+                                "children"  : []
+                                    }
+                                ]
+                        }
+                     
+                     
+                     
+				]
+			} ,
+        {
+				"nodeName" : "",
+						"name" : "",
+						"type" : "",
+						"dataset" : "",
+						"Organisation" : "",
+						"children"  : 
+                    [{
+                            "nodeName" : "International trade data",
+                            "name" : "International trade data",
+                            "type" : "type2",
+                            "dataset" : "details of the import and export of specific commodities and balance of trade data",
+                            "Organisation" : "EZV und BFS",
+                            "children"  : 
+                            [
+                                ]
+                        }
+                     
+                     
+                     
+				]
+			}
+                          
+		]
+	}
+}
