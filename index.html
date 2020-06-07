@@ -47,6 +47,7 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="#Datenin">Dateninventar Visualisierung</a>
           <a class="dropdown-item" href="#Bar">Bar Chart</a>
+        <a class="dropdown-item" href="#opendaten">Open "high value" Dateninventar</a>
         </div>
       </li>
     <li class="nav-item">
@@ -158,6 +159,14 @@ body {
 <iframe src="publdata.html" style="width:1000px; height:350px; border:none;" scrolling="no"></iframe> 
      
 </div>
+ <a name="opendaten"></a>   
+ <h3>Open "high value" Dateninventar</h3> 
+    <p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:150%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size: 18px; line-height: 150%;">Die untere Tabelle zeigt das gesamte Inventar, das auch hier auf opendata.swiss aufzufinden ist <a href="https://opendata.swiss/de/dataset/data-inventory-of-the-federal-administrationdata">(Dateninventar Bund)</a>. Das Dateninventar soll eine Übersicht über sämtliche Datenbestände des Bundes ermöglichen
+und anschliessend der Identifizierung besonders relevanter und möglichst rasch zu publizierender Daten dienen (Bericht "Dateninventarisierung Bund", 2017). Im Bericht wurden die Datensammlungen/-sätze grob in den G8 und GODI Kategorien eingeteilt, aber es fehlte eine klare Einteilung, welche der Daten auf opendata.swiss verfügbar sind. Hier kommt die untere Tabelle ins Spiel. Alle Daten aus dem Dateninventar Bund (Stand 2017) wurden dank Python und Excel mit allen verfügbaren Daten auf opendata.swiss anhand dem Attribut "Titel (DE) verglichen. Somit konnte identifiziert werden, welche Daten bereits auf opendata.swiss vorhanden sind und welche nicht.</span></p>
+    <p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:150%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size: 18px; line-height: 150%;">Der Filter "linked to opendata.swiss" zeigt auf ob die Daten auf opendata.swiss auffindbar sind oder nicht. Wenn das Feld leer ist, dann ist es nicht auf opendata.swiss auffindbar. Falls doch, dann ist es mit der jeweiligen Kategorie gelabelt. Ebenfalls zeigen die Filter "G8", "Barometer" und "GODI" auf, ob die Daten den Kategorien der Indexe zuzuordnen sind oder nicht. </span></p>
+    <iframe src="table.html" width="1600px" height=600px></iframe> 
+     
+ 
     
 <a name="Conclusion"></a>     
 <div class="main">
@@ -169,7 +178,7 @@ body {
 <a name="DataSource"></a>     
 <div class="Main">
   <h2>Data Sources</h2>
-
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:150%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size: 18px; line-height: 150%;">Unten verlinkt sind die Source Codes aufzufinden, die ich für diese Projekt verwendet habe. Ebenfalls ist alles auf GitHub aufzufinden, sogar die Excel-Dateien mit den Rohdaten.</span></p>
 <table class="table table-bordered">
                                 <tbody><tr>
                                     <th>Visualisierungen und Daten</th>
@@ -190,6 +199,12 @@ body {
                                     <tr><td>Bar Chart</td>
                                         <td>
                                         <a href="https://c3js.org/samples/chart_bar.html" style="color: blue"> Link
+                                        </a>
+                                        </td>
+                                    </tr>
+    <tr><td>Open "high value" Dateninventar</td>
+                                        <td>
+                                        <a href="http://www.lisenme.com/dropdown-filtersearch-product-items-using-jquery/" style="color: blue"> Link
                                         </a>
                                         </td>
                                     </tr>
