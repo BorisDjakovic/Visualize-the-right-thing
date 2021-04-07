@@ -1,23 +1,19 @@
 <!doctype html>
+<!-- A project by Boris Djakovic -->
 <html lang="en">
   <head>
-      <!--<script src="../../dist/icicle-chart.js"></script>-->
-<script src="//unpkg.com/d3"></script>
-<script src="//unpkg.com/icicle-chart"></script> 
       
-<!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>  
-      
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      
+
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+      <!-- Bootstrap CSS -->
+      <link href="/css/bootstrap.min.css" rel="stylesheet">
+      <script src="/js/bootstrap.bundle.min.js"></script>
+ 
      <!-- Icons --> 
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
       
@@ -83,7 +79,7 @@
 <p><span style="font-size: 18px;">Das Ziel von diesem Projekt, das als Nebenprodukt meiner Masterarbeit entstanden ist, bei der es um die &laquo;Barrieren der Publikation von OGD&raquo; geht, ist es aufzuweisen, welche Datens&auml;tze/-sammlungen von grosser Wichtigkeit f&uuml;r die Bev&ouml;lkerung sind und dessen Visualisierungen auch dementsprechend einen grossen Mehrwert generieren k&ouml;nnen.</span></p>
 <ul style="list-style-type: disc;">
     <li><span style="font-size: 18px;">Im ersten Kapitel &laquo;Indexes&raquo; werden die Kategorien vom <a href="https://www.gov.uk/government/publications/open-data-charter/g8-open-data-charter-and-technical-annex" target="_blank">G8 Open Data Charter</a>, vom <a href="https://opendatabarometer.org/?_year=2017&indicator=ODB" target="_blank">Open Data Barometer</a> und vom <a href="https://index.okfn.org/place/ch/" target="_blank">Global Open Data Index</a>, im Vergleich gesetzt. Hierbei wird anhand von den drei Indexen aufgezeigt, dass sie im Kern nicht ganz so verschieden sind und ziemlich &auml;hnliche Datenkategorien in Betracht ziehen.</span></li>
-    <li><span style="font-size: 18px;">Im zweiten Kapitel &laquo;Open Dateninventar&raquo; geht es um das <a href="https://opendata.swiss/de/dataset/data-inventory-of-the-federal-administrationdata" target="_blank">Dateninventar</a> vom Bund. Bereits in der <a href="https://www.admin.ch/opc/de/federal-gazette/2012/3765.pdf" target="_blank">Open-Government-Data-Strategie Schweiz 2014&ndash;2018</a> wurde beschlossen, eine Inventarisierung der Datenbest&auml;nde des Bundes durchzuf&uuml;hren, um den Zugang zu den Beh&ouml;rdendaten zu erleichtern. Anhand von zwei Visualisierungen wird aufgezeigt, welche Departemente und Organisationen wieviel Datensammlungen/-s&auml;tze inventarisiert haben und welche davon auf <a href="https://opendata.swiss/de/dataset/data-inventory-of-the-federal-administrationdata">opendata.swiss</a> offen verf&uuml;gbar sind.</span></li>
+    <li><span style="font-size: 18px;">Im zweiten Kapitel &laquo;Open Dateninventar&raquo; geht es um das <a href="https://opendata.swiss/de/dataset/data-inventory-of-the-federal-administrationdata" target="_blank">Dateninventar</a> vom Bund. Bereits in der <a href="https://www.admin.ch/opc/de/federal-gazette/2012/3765.pdf" target="_blank">Open-Government-Data-Strategie Schweiz 2014&ndash;2018</a> wurde beschlossen, eine Inventarisierung der Datenbest&auml;nde des Bundes durchzuf&uuml;hren, um den Zugang zu den Beh&ouml;rdendaten zu erleichtern. Anhand von einer simplen Bar-Chart-Visualisierung wird aufgezeigt, welches Bundesamt wieviele Datensätze inventarisiert hat und wieviele davon auf <a href="https://opendata.swiss/de/dataset/data-inventory-of-the-federal-administrationdata">opendata.swiss</a> vorhanden sind. </span></li>
 </ul>
 <p><span style="font-size: 18px;">Dieses kleine Projekt soll die Identifizierung und Auffindung von &laquo;wichtigen&raquo; Datensammlungen/-s&auml;tzen unterst&uuml;tzen und aufzeigen, welche davon &uuml;berhaupt offen zur Verf&uuml;gung stehen und bereits auf opendata.swiss vorhanden sind.</span></p>
 </div>
@@ -118,27 +114,7 @@
 <h3>Dateninventar und opendata.swiss</h3>
 <p><span style="font-size:18px;">Obwohl GODI und das ODB bereits die Schweiz &laquo;bewertet&raquo; haben (leider ist der aktuellste Stand von 2016 bei beiden Indexen, somit nicht mehr aktuell) bietet der Bericht &laquo;Dateninventarisierung Bund&raquo;, welcher auf <a href="https://www.egovernment.ch/de/umsetzung/e-government-schweiz-2008-2015/open-government-data-schweiz/" target="_blank">egovernment.ch</a> zu finden ist, eine Einordnung der Daten im Dateninventar auf die jeweiligen Kategorien an.</span></p>
 <p><span style="font-size:18px;">Der Bundesrat will mit seiner Open-Government-Data-Strategie Schweiz 2014&ndash;2018 den Zugang zu Beh&ouml;rdendaten erleichtern. Eine der Massnahmen aus der Strategie ist die Inventarisierung der Datenbest&auml;nde des Bundes. Das Ziel dieser Inventarisierung ist es, eine m&ouml;glichst umfassende &Uuml;bersicht &uuml;ber jene Datensammlungen zu erhalten, die in der Verwaltung bereits vorhanden sind. Nur ein Teil der Datens&auml;tze im Inventar sind bereits auf opendata.swiss publiziert.<a href="https://opendata.swiss/de/dataset/data-inventory-of-the-federal-administrationdata" target="_blank"> (siehe Dateninventar Bund auf opendata.swiss)</a></span></p>
-<p><span style="font-size:18px;">Die &laquo;Dateninventar Visualisierung&raquo; zeigt auf, welche Datensammlungen aus dem Dateninventar offen auf opendata.swiss zu finden sind. Dadurch, dass das Dateninventar von 2017 ist und dementsprechend auch &laquo;veraltet&raquo;, zeigt es dennoch auf ob die relevanten inventarisierten Datensammlungen bereits auf opendata.swiss vorhanden sind oder nicht. Nicht alle Datensätze/-sammlungen erfüllen die "high value" Kriterien der Indexe, aber da es sich um Daten vom Bund handelt, sind diese dennoch f&uuml;r die Schweiz relevant.</span></p>
-    
- 
-<!--D3 Sckript--> 
-<div id="chart"></div>
-
-  <script>
-    const color = d3.scaleOrdinal(d3.schemePaired);
-    fetch('flare.json').then(res => res.json()).then(data => {
-      Icicle()
-        .data(data)
-        .label('name')
-        .size('size')
-        .color("color")
-        .tooltipContent((d, node) => `Size: <i>${node.value}</i>`)
-        (document.getElementById('chart'));
-    });
-  </script>
-<figcaption>
-<p>Iciclye-Visualisierung des Dateninventars Bund. Beschreibt welche Datensammlungen bereits auf opendata.swiss vorhanden sind (grün) und welche nicht (rot). Die Visualisierung erheben keinen Anspruch auf Vollständigkeit. Stand 10.2.2020. </p>
-</figcaption>     
+<p><span style="font-size:18px;">Die untere Bar-Chart-Visualisierung zeigt auf, wieviel Datensätze bereits offen auf opendata.swiss zu finden sind. Dadurch, dass das Dateninventar von 2017 ist und dementsprechend auch &laquo;veraltet&raquo;, zeigt es dennoch auf ob die relevanten inventarisierten Datensammlungen bereits auf opendata.swiss vorhanden sind oder nicht. Nicht alle Datensätze/-sammlungen erfüllen die "high value" Kriterien der Indexe, aber da es sich um Daten vom Bund handelt, sind diese dennoch f&uuml;r die Schweiz relevant.</span></p>   
    
 <a name="Bar"></a>
 <div>
@@ -161,7 +137,7 @@ und anschliessend der Identifizierung besonders relevanter und möglichst rasch 
 
     
 <button type="button" class="btn btn-primary" onclick=" window.open('Dateninventar.html','_blank')">"high value" Dateninventar</button>
-<iframe src="Dateninventar.html" width="1450px" height=600px></iframe> 
+<iframe src="Dateninventar.html" style="width:100%; height:600px"></iframe> 
 <figcaption>
 <p>Dateninventar Bund - Tabelle. Die Tabelle erheben keinen Anspruch auf Vollständigkeit. Stand 10.2.2020. </p>
 </figcaption>     
@@ -171,8 +147,8 @@ und anschliessend der Identifizierung besonders relevanter und möglichst rasch 
 <div class="main">
   <h3>Conclusion</h3>
 <p><span style="font-size: 18px; line-height: 150%;">Die Tabellen "Index Definition" und "High Value Daten Schweiz" zeigen, dass verschiedene Indexe die gleichen/&auml;hnlichen Datenkategorien verlangen. Selbstverst&auml;ndlich unterscheiden sie sich in der Methodik und in der Bewertung, aber im Kern sind es die selben Daten, die analysiert werden.</span></p>
-<p><span style="font-size: 18px; line-height: 150%;">Die zweite und dritte Visualisierung bezog sich vorallem auf das Dateninventar. Nur anhand von einfachen Visualisierungen ist ein Monitoring von Beh&ouml;rden/Departementen m&ouml;glich um weitere Analysen durchf&uuml;hren zu k&ouml;nnen und zu hinterfragen, weshalb einige Datens&auml;tze publiziert worden sind und andere wiederum nicht. Auch erm&ouml;glichen einfache Visualisierungen das Tracken von &laquo;high value&raquo; Data. Der Fokus sollte darauf gelegt werden, dass wichtige, komplexe Datens&auml;tze visualisiert werden, damit sie auch der &laquo;einfache&raquo; B&uuml;rger versteht und sich &uuml;ber bestimmte Themen informieren kann und dass durch die Visualisierung von &laquo;high value&raquo; Data ein Mehrwert f&uuml;r die ganze Gesellschaft generiert wird.</span></p>
-    
+e ganze Gesellschaft generiert wird.</span></p>
+    <p><span style="font-size: 18px; line-height: 150%;">Nur anhand von einfachen Visualisierungen ist ein Monitoring von Beh&ouml;rden/Departementen m&ouml;glich um weitere Analysen durchf&uuml;hren zu k&ouml;nnen und zu hinterfragen, weshalb einige Datens&auml;tze publiziert worden sind und andere wiederum nicht. Auch erm&ouml;glichen einfache Visualisierungen das Tracken von &laquo;high value&raquo; Data. Der Fokus sollte darauf gelegt werden, dass wichtige, komplexe Datens&auml;tze visualisiert werden, damit sie auch der &laquo;einfache&raquo; B&uuml;rger versteht und sich &uuml;ber bestimmte Themen informieren kann und dass durch die Visualisierung von &laquo;high value&raquo; Data ein Mehrwert f&uuml;r di
     
 <a name="DataSource"></a>     
 <div class="Main">
@@ -183,12 +159,6 @@ und anschliessend der Identifizierung besonders relevanter und möglichst rasch 
                                     <th>Visualisierungen und Daten</th>
                                 </tr>
                                 </tbody><tbody>
-                                    <tr><td>Zoomable partition layout</td>
-                                        <td>
-                                        <a href="https://observablehq.com/@d3/zoomable-icicle" style="color: blue" target="_blank"> Link
-                                        </a>
-                                        </td>
-                                    </tr>
                                     <tr><td>Bar Chart</td>
                                         <td>
                                         <a href="https://c3js.org/samples/chart_bar.html" style="color: blue" target="_blank"> Link
@@ -212,9 +182,9 @@ und anschliessend der Identifizierung besonders relevanter und möglichst rasch 
 </table>
   <div class="container">   
   <div class="d-flex justify-content-center">
-    <!-- Team Member 1 -->
-    <div class="col-xl-3 col-md-6 mb-4">
-      <div class="card border-0 shadow">
+    
+    <div class="col-xl-3 col-md-6 mb-4 d-flex justify-content-center" >
+      <div class="card border-0 shadow" style="width: 30rem;" >
         <img src="Boris.jpg" class="card-img-top" alt="...">
         <div class="card-body text-center">
           <h5 class="card-title mb-0">Boris Djakovic</h5>
@@ -230,7 +200,7 @@ und anschliessend der Identifizierung besonders relevanter und möglichst rasch 
           
           <li><a href="https://twitter.com/BorisDjakovic" target="_blank" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
           
-          <li><a href="https://www.linkedin.com/in/boris-djakovic-378740168" target="_blank" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="www.linkedin.com/in/boris-djakovic-378740168" target="_blank" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
         </ul>
       </div>
    </div>
@@ -238,7 +208,29 @@ und anschliessend der Identifizierung besonders relevanter und möglichst rasch 
  
  </div>     
 </body>
-     
+ <!--
+MIT License
+
+Copyright (c) 2021 Boris Djakovic
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE. 
+-->    
 
       
 </html>
